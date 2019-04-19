@@ -1,0 +1,1 @@
+# cms-ars-3.1-moderate-aws-rds-microsoft-sql-server-2014-database-stig-overlay
