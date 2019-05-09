@@ -1,4 +1,4 @@
-name: cms-ars-3.1-moderate-aws-rds-microsoft-sql-server-2014-database-stig-overlay
+name: cms-ars-3.1-moderate-aws-rds-microsoft-sql-server-2014-instance-stig-overlay
 title: .
 maintainer: CMS InSpec Dev Team
 copyright: .
@@ -11,8 +11,8 @@ supports:
 inspec_version: "~> 3.0"
 
 depends:
-- name: aws-rds-microsoft-sql-server-2014-database-stig-baseline
-  path: ../aws-rds-microsoft-sql-server-2014-database-stig-baseline
+- name: aws-rds-microsoft-sql-server-2014-instance-stig-baseline
+  path: ../aws-rds-microsoft-sql-server-2014-instance-stig-baseline
 
 attributes:
   - name: user
