@@ -1,6 +1,6 @@
 # cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay
 
-InSpec profile overlay to validate the secure configuration of AWS RDS Microsoft SQL Server 2014 Instance against [DISA's](https://iase.disa.mil/stigs/Pages/index.aspx) AWS RDS Microsoft SQL Server 2014 Instance STIG Version 1 Release 9 tailored for [CMS ARS 3.1](https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/ARS-31-Publication.html) for CMS systems categories as Moderate.
+InSpec profile overlay to validate the secure configuration of AWS RDS Microsoft SQL Server 2014 Instance against [DISA's](https://iase.disa.mil/stigs/Pages/index.aspx) AWS RDS Microsoft SQL Server 2014 Instance STIG Version 1 Release 9 tailored for [CMS ARS 3.1](https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/ARS-31-Publication.html) for CMS systems categories as High.
 
 ## Getting Started  
 It is intended and recommended that InSpec and this profile overlay be run from a __"runner"__ host (such as a DevOps orchestration server, an administrative management system, or a developer's workstation/laptop) against the target remotely over __ssh__.
@@ -149,9 +149,6 @@ filestream_required: false
 # description: 'Set to true if filestream transact access is required'
 filestream_transact_access_only_required: false
 ```
-## Note
-
-It is assumed that the password complexity plugin: validate_password.so is installed, otherwise control 7.6 will fail.
 
 ## Running This Overlay
 When the __"runner"__ host uses this profile overlay for the first time, follow these steps: 
