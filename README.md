@@ -1,6 +1,6 @@
-# cms-ars-3.1-moderate-aws-rds-microsoft-sql-server-2014-database-stig-overlay
+# cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay
 
-InSpec profile overlay to validate the secure configuration of AWS RDS Microsoft SQL Server 2014 Database against [DISA's](https://iase.disa.mil/stigs/Pages/index.aspx) AWS RDS Microsoft SQL Server 2014 Database STIG Version 1 Release 6 tailored for [CMS ARS 3.1](https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/ARS-31-Publication.html) for CMS systems categories as Moderate.
+InSpec profile overlay to validate the secure configuration of AWS RDS Microsoft SQL Server 2014 Instance against [DISA's](https://iase.disa.mil/stigs/Pages/index.aspx) AWS RDS Microsoft SQL Server 2014 Instance STIG Version 1 Release 9 tailored for [CMS ARS 3.1](https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/ARS-31-Publication.html) for CMS systems categories as Moderate.
 
 ## Getting Started  
 It is intended and recommended that InSpec and this profile overlay be run from a __"runner"__ host (such as a DevOps orchestration server, an administrative management system, or a developer's workstation/laptop) against the target remotely over __ssh__.
@@ -76,24 +76,24 @@ When the __"runner"__ host uses this profile overlay for the first time, follow 
 ```
 mkdir profiles
 cd profiles
-git clone https://github.cms.gov/ispg/cms-ars-3.1-moderate-aws-rds-microsoft-sql-server-2014-database-stig-overlay.git
-git clone https://github.com/mitre/aws-rds-microsoft-sql-server-2014-database-stig-baseline.git
-cd cms-ars-3.1-moderate-aws-rds-microsoft-sql-server-2014-database-stig-overlay
+git clone https://github.cms.gov/ispg/cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay.git
+git clone https://github.com/mitre/aws-rds-microsoft-sql-server-2014-instance-stig-baseline.git
+cd cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay
 bundle install
 cd ..
-inspec exec cms-ars-3.1-moderate-aws-rds-microsoft-sql-server-2014-database-stig-overlay --attrs=<path_to_your_attributes_file/name_of_your_attributes_file.yml> --target=ssh://<your_target_host_name_or_ip_address> --user=<target_account_with_administrative_privileges> --password=<password_for_target_account> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json> 
+inspec exec cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay --attrs=<path_to_your_attributes_file/name_of_your_attributes_file.yml> --target=ssh://<your_target_host_name_or_ip_address> --user=<target_account_with_administrative_privileges> --password=<password_for_target_account> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json> 
 ```
 
 For every successive run, follow these steps to always have the latest version of this overlay and dependent profiles:
 
 ```
-cd profiles/aws-rds-microsoft-sql-server-2014-database-stig-baseline
+cd profiles/aws-rds-microsoft-sql-server-2014-instance-stig-baseline
 git pull
-cd ../cms-ars-3.1-moderate-aws-rds-microsoft-sql-server-2014-database-stig-overlay
+cd ../cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay
 git pull
 bundle install
 cd ..
-inspec exec cms-ars-3.1-moderate-aws-rds-microsoft-sql-server-2014-database-stig-overlay --attrs=<path_to_your_attributes_file/name_of_your_attributes_file.yml> --target=ssh://<your_target_host_name_or_ip_address> --user=<target_account_with_administrative_privileges> --password=<password_for_target_account> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json> 
+inspec exec cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay --attrs=<path_to_your_attributes_file/name_of_your_attributes_file.yml> --target=ssh://<your_target_host_name_or_ip_address> --user=<target_account_with_administrative_privileges> --password=<password_for_target_account> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json> 
 ```
 
 ## Viewing the JSON Results
