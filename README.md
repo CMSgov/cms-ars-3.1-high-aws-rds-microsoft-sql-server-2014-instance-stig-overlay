@@ -190,7 +190,7 @@ The JSON InSpec results file may also be loaded into a __[full heimdall server](
 * Alicia Sturtevant
 
 ## Getting Help
-To report a bug or feature request, please open an [issue](https://github.cms.gov/ispg/cms-ars-3.1-moderate-aws-rds-oracle-mysql-ee-5.7-cis-overlay/issues/new).
+To report a bug or feature request, please open an [issue](https://github.cms.gov/ispg/cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay/issues/new).
 
 ## License
 This is licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license. 
