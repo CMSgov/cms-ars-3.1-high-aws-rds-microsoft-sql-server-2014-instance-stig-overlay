@@ -1,4 +1,4 @@
-name: cms-ars-3.1-moderate-aws-rds-microsoft-sql-server-2014-instance-stig-overlay
+name: cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay
 title: .
 maintainer: CMS InSpec Dev Team
 copyright: .
