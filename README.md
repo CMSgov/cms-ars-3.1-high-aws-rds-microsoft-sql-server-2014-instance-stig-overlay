@@ -12,141 +12,139 @@ Latest versions and installation options are available at the [InSpec](http://in
 The following attributes must be configured in an attributes file for the profile to run correctly. More information about InSpec attributes can be found in the [InSpec Profile Documentation](https://www.inspec.io/docs/reference/profiles/).
  
 ```
-# Username for MSSQL DB Server
-user: null
+# description: Username for MSSQL DB Server (e.g., null).
+user: 
 
-# Password for MSSQL DB Server
-password: null
+# description: Password for MSSQL DB Server (e.g., null).
+password: 
 
-# Hostname for MSSQL DB Server
-host: 'hostname'
+# description: Hostname for MSSQL DB Server (e.g., 'hostname').
+host: 
 
-# Instance name of the MSSQL DB Server
-instance: 'MSSQL2014'
+# description: Instance name of the MSSQL DB Server (e.g., 'MSSQL2014').
+instance: ''
 
-# Port of MSSQL DB Server
+# description: Port of MSSQL DB Server
 port: 1433
 
-# Name of the specific database being evaluated within the MSSQL server
-db_name: 'master'
+# description: Name of the specific database being evaluated within the MSSQL server (e.g., 'master').
+db_name: ''
 
-# description: 'Set to true If SQL Server Trace is in use for audit purposes'
-server_trace_implemented: true
+# description: Set to true If SQL Server Trace is in use for audit purposes
+server_trace_implemented: false
 
-#   description: 'Set to true If SQL Server Audit is in use for audit purposes'
-server_audit_implemented: true
+# description: Set to true If SQL Server Audit is in use for audit purposes
+server_audit_implemented: false
 
-# description: 'Set to true if SQL Server Reporting Services is in use'
-  sql_server_reporting_services_used: false
+# description: Set to true if SQL Server Reporting Services is in use
+sql_server_reporting_services_used: false
 
-# description: 'Set to true if SQL Server data tools is required'
+# description: Set to true if SQL Server data tools is required
 sql_server_data_tools_required: false
 
-# description: 'Set to true if SQL Server Integration Services is in use'
+# description: Set to true if SQL Server Integration Services is in use
 sql_server_integration_services_used: false
 
-# description: 'Set to true if SQL Server analysis Services is in use'
+# description: Set to true if SQL Server analysis Services is in use
 sql_server_analysis_services_used: false
 
-# description: 'Set to true if SQL Server Distributed Replay Client is in use'
+# description: Set to true if SQL Server Distributed Replay Client is in use
 sql_server_distributed_replay_client_used: false
 
-# description: 'Set to true if SQL Server Distributed Replay Controller is in use'
+# description: Set to true if SQL Server Distributed Replay Controller is in use
 sql_server_distributed_replay_controller_used: false
 
-# description: 'Set to true if SQL Server full-text search is in use'
+# description: Set to true if SQL Server full-text search is in use
 sql_server_full_text_search_used: false
 
-# description: 'Set to true if master data services is in use'
+# description: Set to true if master data services is in use
 master_data_services_used: false
 
-# description: 'Set to true if data quality client is in use'
+# description: Set to true if data quality client is in use
 data_quality_client_used: false
 
-# description: 'Set to true if data quality services is in use'
+# description: Set to true if data quality services is in use
 data_quality_services_used: false
 
-# description: 'Set to true if data quality services is in use'
+# description: Set to true if data quality services is in use
 data_quality_services_used: false
 
-# description: 'Set to true if client tools sdk is in use'
+# description: Set to true if client tools sdk is in use
 client_tools_sdk_used: false
 
-# description: 'Set to true if sql server management tools is in use'
+# description: Set to true if sql server management tools is in use
 sql_mgmt_tools_used: false
 
-# description: 'Set to true if xp_cmdhsell is required'
+# description: Set to true if xp_cmdhsell is required
 sql_mgmt_tools_used: false
 
-# description: 'instance name MSSQL DB Server'
-server_instance: 'WIN-FC4ANINFUFP'
+# description: instance name MSSQL DB Server (e.g., 'WIN-FC4ANINFUFP')
+server_instance: ''
 
-#description: 'List of users with permissions - ALTER TRACE, CREATE TRACE EVENT NOTIFICATION'
+# description: List of users with permissions (e.g., ['ALTER TRACE', 'CREATE TRACE EVENT NOTIFICATION'])
 approved_audit_maintainers: []
 
-# description: 'List of users with audit permissions - ALTER ANY SERVER AUDIT, CONTROL SERVER, ALTER ANY DATABASE, CREATE ANY DATABASE'
+# description: List of users with audit permissions (e.g., ['ALTER ANY SERVER AUDIT', 'CONTROL SERVER', 'ALTER ANY DATABASE', 'CREATE ANY DATABASE'])
 allowed_audit_permissions: []
 
-# description: 'List of user with permissions -  ALTER ANY SERVER AUDIT, ALTER ANYDATABASE AUDIT, ALTER TRACE; or EXECUTE'
+# description: List of user with permissions (e.g., ['ALTER ANY SERVER AUDIT', 'ALTER ANYDATABASE AUDIT', 'ALTER TRACE', 'EXECUTE'])
 allowed_sql_alter_permissions: []
 
-# description: 'List of approved users with access to SQL Server Audits'
+# description: List of approved users with access to SQL Server Audits
 approved_users_sql_audits: []
 
-# description: 'List of sql server users with permissions - alter, create, control'
+# description: List of sql server users with permissions (e.g., ['alter', 'create', control'])
 approved_users_server: []
 
-# description: 'List of sql database users with permissions - alter, create, control'
+# description: List of sql database users with permissions (e.g., ['alter', 'create', 'control'])
 approved_users_database: []
 
-# description: 'List of sql components installed'
+# description: List of sql components installed
 sql_components: []
 
-#  description: 'List of authorized network protocols for the SQL server'
-authorized_protocols: ["Shared Memory",
-                       "TCP/IP"]
+#  description: List of authorized network protocols for the SQL server (e.g., ['Shared Memory', 'TCP/IP'])
+authorized_protocols: []
 
-# description: 'List of authorized network ports for the SQL server'
-authorized_ports: ["1433"]      
+# description: List of authorized network ports for the SQL server (e.g., ['1433'])
+authorized_ports: []      
 
-# description: 'List of authorized network port names for the SQL server'
-authorized_ports_name: ["TcpPort",
-                        "TcpDynamicPorts"]  
+# description: List of authorized network port names for the SQL server (e.g., ['TcpPort', 'TcpDynamicPorts'])
+authorized_ports_name: []  
 
-# description: 'List of authorized users for the SQL server'
+# description: List of authorized users for the SQL server
 authorized_sql_users: []
 
-# description: 'List of users allowed to execute privileged functions - create, alter, delete'
+# description: List of users allowed to execute privileged functions  (e.g., ['create', 'alter', 'delete'])
 allowed_users_priv_functions: []
 
-# description: 'List of allowed server permissions'
+# description: List of allowed server permissions
 allowed_server_permissions: []
 
-# description: 'List of allowed database permissions'
+# description: List of allowed database permissions
 allowed_database_permissions: []
 
-# description: 'List of Databases that require encryption'
+# description: List of Databases that require encryption
 encrypted_databases: []
 
-# description: 'Set to true if data at rest encryption is required'
+# description: Set to true if data at rest encryption is required
 data_at_rest_encryption_required: false
 
-# description: 'Set to true if full disk encryption is in place'
+# description: Set to true if full disk encryption is in place
 full_disk_encryption_inplace: false
 
-# description: 'List of user allowed to execute privileged functions'
+# description: List of user allowed to execute privileged functions
 allowed_users: []
 
-# description: 'Set to true xp cmdshell is required'
+# description: Set to true xp cmdshell is required
 is_xp_cmdshell_required: false
 
-# description: 'List of accounts managed by the sql server'
+# description: List of accounts managed by the sql server
 sql_managed_accounts: []
 
-# description: 'Set to true if filestream is required'
+# description: Set to true if filestream is required
 filestream_required: false
 
-# description: 'Set to true if filestream transact access is required'
+# description: Set to true if filestream transact access is required
 filestream_transact_access_only_required: false
 ```
 
@@ -156,7 +154,7 @@ When the __"runner"__ host uses this profile overlay for the first time, follow 
 ```
 mkdir profiles
 cd profiles
-git clone https://github.cms.gov/ispg/cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay.git
+git clone https://github.cms.gov/ISPG/cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay.git
 git clone https://github.com/mitre/aws-rds-microsoft-sql-server-2014-instance-stig-baseline.git
 cd cms-ars-3.1-high-aws-rds-microsoft-sql-server-2014-instance-stig-overlay
 bundle install
