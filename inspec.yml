@@ -6,9 +6,6 @@ copyright_email:
 summary: .
 license: Apache-2.0
 version: 0.1.0
-supports:
-  platform: os
-inspec_version: "~> 3.0"
 
 depends:
 - name: aws-rds-microsoft-sql-server-2014-instance-stig-baseline
