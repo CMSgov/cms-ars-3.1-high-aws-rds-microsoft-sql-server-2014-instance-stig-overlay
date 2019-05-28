@@ -69,10 +69,10 @@ data_quality_services_used: false
 # description: Set to true if data quality services is in use
 data_quality_services_used: false
 
-# description: Set to true if client tools sdk is in use
+# description: Set to true if client tools SDK is in use
 client_tools_sdk_used: false
 
-# description: Set to true if sql server management tools is in use
+# description: Set to true if SQL server management tools is in use
 sql_mgmt_tools_used: false
 
 # description: Set to true if xp_cmdhsell is required
@@ -93,13 +93,13 @@ allowed_sql_alter_permissions: []
 # description: List of approved users with access to SQL Server Audits
 approved_users_sql_audits: []
 
-# description: List of sql server users with permissions (e.g., ['alter', 'create', control'])
+# description: List of SQL server users with permissions (e.g., ['alter', 'create', control'])
 approved_users_server: []
 
-# description: List of sql database users with permissions (e.g., ['alter', 'create', 'control'])
+# description: List of SQL database users with permissions (e.g., ['alter', 'create', 'control'])
 approved_users_database: []
 
-# description: List of sql components installed
+# description: List of SQL components installed
 sql_components: []
 
 #  description: List of authorized network protocols for the SQL server (e.g., ['Shared Memory', 'TCP/IP'])
@@ -138,7 +138,7 @@ allowed_users: []
 # description: Set to true xp cmdshell is required
 is_xp_cmdshell_required: false
 
-# description: List of accounts managed by the sql server
+# description: List of accounts managed by the SQL server
 sql_managed_accounts: []
 
 # description: Set to true if filestream is required
