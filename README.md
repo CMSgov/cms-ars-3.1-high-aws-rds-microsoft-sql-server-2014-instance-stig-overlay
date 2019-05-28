@@ -30,10 +30,10 @@ port: 1433
 # description: Name of the specific database being evaluated within the MSSQL server (e.g., 'master').
 db_name: ''
 
-# description: Set to true If SQL Server Trace is in use for audit purposes
+# description: Set to true if SQL Server Trace is in use for audit purposes
 server_trace_implemented: false
 
-# description: Set to true If SQL Server Audit is in use for audit purposes
+# description: Set to true if SQL Server Audit is in use for audit purposes
 server_audit_implemented: false
 
 # description: Set to true if SQL Server Reporting Services is in use
