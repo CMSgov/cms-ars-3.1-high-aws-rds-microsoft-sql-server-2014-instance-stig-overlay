@@ -193,7 +193,7 @@ attributes:
     default: []
 
   - name: encrypted_databases
-    description: 'List of Databases that require encryption (e.g., ['EmpData'])'
+    description: 'List of Databases that require encryption (e.g., [''EmpData''])'
     type: array
     default: []
 
