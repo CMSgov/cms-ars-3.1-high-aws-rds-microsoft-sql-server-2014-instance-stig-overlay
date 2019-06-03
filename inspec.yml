@@ -21,12 +21,12 @@ attributes:
     default: null
 
   - name: host
-    description: 'hostname MSSQL DB Server'
-    default: 'WIN-FC4ANINFUFP'
+    description: 'hostname MSSQL DB Server (e.g., ''WIN-FC4ANINFUFP'')'
+    default: ''
 
   - name: instance
-    description: 'instance name MSSQL DB Server'
-    default: 'MSSQL2014'
+    description: 'instance name MSSQL DB Server (e.g., ''MSSQL2014'')'
+    default: ''
 
   - name: port
     description: 'port MSSQL DB Server'
@@ -34,19 +34,19 @@ attributes:
     default: 1433
 
   - name: db_name
-    description: 'name of the specific DB being evaluated within the MSSQL server'
+    description: 'name of the specific DB being evaluated within the MSSQL server (e.g., ''master'')'
     type: string
-    default: 'master'
+    default: ''
 
   - name: server_trace_implemented
     description: 'Set to true If SQL Server Trace is in use for audit purposes'
     type: boolean
-    default: true
+    default: false
 
   - name: server_audit_implemented
     description: 'Set to true If SQL Server Audit is in use for audit purposes'
     type: boolean
-    default: true
+    default: false
 
   - name: sql_server_reporting_services_used
     description: 'Set to true if SQL Server Reporting Services is in use'
@@ -119,8 +119,8 @@ attributes:
     default: false
 
   - name: server_instance
-    description: 'instance name MSSQL DB Server'
-    default: 'WIN-FC4ANINFUFP'
+    description: 'instance name MSSQL DB Server (e.g., ''WIN-FC4ANINFUFP'')'
+    default: ''
 
   - name: approved_audit_maintainers
     description: 'List of users with permissions - ALTER TRACE, CREATE TRACE EVENT NOTIFICATION'
@@ -158,21 +158,19 @@ attributes:
     default: []
 
   - name: authorized_protocols
-    description: 'List of authorized network protocols for the SQL server'
+    description: 'List of authorized network protocols for the SQL server (e.g., ["Shared Memory", "TCP/IP"])'
     type: array
-    default: ["Shared Memory",
-            "TCP/IP"]
+    default: []
 
   - name: authorized_ports
-    description: 'LList of authorized network ports for the SQL server'
+    description: 'List of authorized network ports for the SQL server (e.g., ["1433"])'
     type: array
-    default: ["1433"]      
+    default: []      
 
   - name: authorized_ports_name
-    description: 'List of authorized network port names for the SQL server'
+    description: 'List of authorized network port names for the SQL server (e.g., ["TcpPort", "TcpDynamicPorts"])'
     type: array
-    default: ["TcpPort",
-            "TcpDynamicPorts"]  
+    default: []  
 
   - name: authorized_sql_users
     description: 'List of authorized users for the SQL server'
@@ -195,9 +193,9 @@ attributes:
     default: []
 
   - name: encrypted_databases
-    description: 'List of Databases that require encryption'
+    description: 'List of Databases that require encryption (e.g., ['EmpData'])'
     type: array
-    default: ['EmpData']
+    default: []
 
   - name: data_at_rest_encryption_required
     description: 'Set to true if data at rest encryption is required'
@@ -241,30 +239,30 @@ attributes:
     categories of information, such as classification or sensitivity level.  
     If it is not, such controls is not applicable (NA).'
     type: boolean
-    default: true
+    default: false
     
   - name: server_audit_at_database_level_required
     description: 'Specify if  SQL Server Audit is not in use at the database level'
     type: boolean
-    default: true
+    default: false
 
   - name: track_stored_procedures_changes_job_name
     description: 'name of the timed job that automatically checks all system and 
-    user-defined procedures for being modified'
+    user-defined procedures for being modified (e.g., ''STIG_database_object_tracking'')'
     type: string
-    default: 'STIG_database_object_tracking'
+    default: ''
 
   - name: track_triggers_changes_job_name
     description: 'name of the timed job that automatically checks all system and 
-    user-defined triggers for being modified'
+    user-defined triggers for being modified (e.g., ''STIG_database_object_tracking'')'
     type: string
-    default: 'STIG_database_object_tracking'
+    default: ''
 
   - name: track_functions_changes_job_name 
     description: 'name of the timed job that automatically checks all system and 
-    user-defined functions for being modified'
+    user-defined functions for being modified (e.g., ''STIG_database_object_tracking'')'
     type: string
-    default: 'STIG_database_object_tracking'
+    default: ''
 
   - name: authorized_principals
     description: 'identify SQL Server accounts authorized to own database objects'
@@ -274,7 +272,7 @@ attributes:
   - name: data_at_rest_encryption_required
     description: 'Set to true if data at rest encryption is required'
     type: boolean
-    default: true
+    default: false
 
   - name: full_disk_encryption_inplace
     description: 'Set to true if full disk encryption is in place'
@@ -284,5 +282,5 @@ attributes:
   - name: security_labeling_required
     description: 'Set to true if security labeling is required'
     type: boolean
-    default: true
+    default: false
   
