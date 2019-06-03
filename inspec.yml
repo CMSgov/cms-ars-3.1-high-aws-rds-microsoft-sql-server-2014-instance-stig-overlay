@@ -158,17 +158,17 @@ attributes:
     default: []
 
   - name: authorized_protocols
-    description: 'List of authorized network protocols for the SQL server (e.g., ["Shared Memory", "TCP/IP"])'
+    description: 'List of authorized network protocols for the SQL server (e.g., [''Shared Memory'', ''TCP/IP''])'
     type: array
     default: []
 
   - name: authorized_ports
-    description: 'List of authorized network ports for the SQL server (e.g., ["1433"])'
+    description: 'List of authorized network ports for the SQL server (e.g., [''1433''])'
     type: array
     default: []      
 
   - name: authorized_ports_name
-    description: 'List of authorized network port names for the SQL server (e.g., ["TcpPort", "TcpDynamicPorts"])'
+    description: 'List of authorized network port names for the SQL server (e.g., [''TcpPort'', ''TcpDynamicPorts''])'
     type: array
     default: []  
 
