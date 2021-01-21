@@ -1,6 +1,12 @@
 # encoding: utf-8                                                                                            
 include_controls 'microsoft-sql-server-2014-instance-stig-baseline' do
 
+  control 'V-67765' do
+    title "Where SQL Server Trace is in use for auditing purposes, SQL Server
+    must allow only the ISSO (or individuals or roles appointed by the ISSO) to
+    select which auditable events are to be traced."
+  end
+  
   control 'V-67893' do
     title 'SQL Server, the operating system, or the storage system must provide a warning to appropriate support staff when allocated audit record storage volume reaches 80% of maximum audit record storage capacity.'
     desc 'check', 'Organizations are required to use a central log management system, so, under normal conditions, the audit space allocated to SQL Server on its own server will not be an issue. However, space will still be required on the DBMS server for audit records in transit, and, under abnormal conditions, this could fill up. Since a requirement exists to halt processing upon audit failure, a service outage would result.
