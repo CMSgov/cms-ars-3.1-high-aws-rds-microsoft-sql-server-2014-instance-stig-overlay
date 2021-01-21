@@ -2,9 +2,7 @@
 include_controls 'microsoft-sql-server-2014-instance-stig-baseline' do
 
   control 'V-67765' do
-    title "Where SQL Server Trace is in use for auditing purposes, SQL Server
-    must allow only the ISSO (or individuals or roles appointed by the ISSO) to
-    select which auditable events are to be traced."
+    title 'Where SQL Server Trace is in use for auditing purposes, SQL Server must allow only the ISSO (or individuals or roles appointed by the ISSO) to select which auditable events are to be traced.'
   end
   
   control 'V-67893' do
